@@ -105,7 +105,8 @@
             <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Kayıt Ol</h3>
             <!--form action="https://getsimpleform.com/messages?form_api_token=bf03ed7e99824273d92798b4ae4a63fa" method="post" id="contact"-->
 	    <!--form method="POST" action="http://formspree.io/nemoxn@gmail.com"-->
-        <form action="https://19test.github.io/bilgehandental/" method="post" id="contact">
+        <!--form action="https://19test.github.io/bilgehandental/" method="post" id="contact"-->
+        <form action="#" method="post" id="sign_up">
                 <div class="form-field">
                     <input name="name" type="text" placeholder="Ad Soyad" required>
                 </div>
@@ -124,18 +125,22 @@
       frm.submit(function (ev) {
       $.ajax({
           type: 'POST',
-          url: 'http://api_dev.bulut.dental/v1/firms', // 3001?, rails port 3001 de calisiyor 
+          url: 'http://api_dev.bulut.dental/v1/firms',
           data: frm.serialize(),
           dataType: 'json',
           // islem basarılı ise
           success: function(data, status, xml){
-              alert("İşlem başarılı bir şekilde gerçekleşmiştir.");
+            console.log("SUCCESS");
+            console.log("data: ", data);
+            console.log("status: ", status);
+            console.log("xml: ", xml);
           },
           // islem basarısız ise
           error: function(xml, status, error){
-              alert("İşlem başarışız.");
-              alert(xml.status);
-              alert(error);
+            console.log("ERROR");
+            console.log("xml: ", xml);
+            console.log("status: ", status);
+            console.log("error: ", error);
           },
           // son
           complete: function(xml, status){
