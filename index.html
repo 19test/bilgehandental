@@ -535,7 +535,7 @@
       frm.submit(function (ev) {
       $.ajax({
           type: 'POST',
-          url: 'http://api_dev.bulut.dental/v1/firms',
+          url: 'https://api_dev.bulut.dental/v1/firms',
           data: frm.serialize(),
           dataType: 'json',
           // islem basarılı ise
@@ -560,7 +560,7 @@
          ev.preventDefault();
       });
     </script>
-    
+
     <script type="text/javascript">
       $(document).ready(function() {      
         document.getElementById("button1").disabled = true;
