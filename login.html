@@ -72,13 +72,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse scrollspy" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="scroll" href="#top">Ana Sayfa</a></li>
-                <li><a class="scroll" href="#about">Hakkımızda</a></li>
-                <li><a class="scroll" href="#treatments">Tedavi</a></li>
-                <li><a class="scroll" href="#team">Ekip</a></li>
-                <li><a class="scroll" href="#testimonials">Mutlu Hastalar</a></li>
-                <li><a class="scroll" href="#gallery">Galeri</a></li>
-                <li><a class="scroll" href="#location">İletişim</a></li>
+                <li><a class="scroll" href="/">Ana Sayfa</a></li>
                 <li><a class="scroll" href="/login">Login</a></li>
             </ul>
         </div>
@@ -100,413 +94,24 @@
     <div class="container-fluid">
         
         <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form">
-            <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Kayıt Ol</h3>
-            <!--form action="https://getsimpleform.com/messages?form_api_token=bf03ed7e99824273d92798b4ae4a63fa" method="post" id="contact"-->
-	    <!--form method="POST" action="http://formspree.io/nemoxn@gmail.com"-->
-        <!--form action="https://19test.github.io/" method="post" id="contact"-->
-        <form action="#" method="post" id="sign_up">
+            <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Giriş Yap</h3>
+            <form action="#" method="post" id="sign_in">
                 <div class="form-field">
-                    <input name="name" type="text" placeholder="Ad Soyad" required>
+                    <input name="email" id="email" type="text" placeholder="Telefon" required>
                 </div>
                 <div class="form-field">
-                    <input name="phone" type="tel" placeholder="Telefon" required>
+                    <input name="password" id="password" type="password" placeholder="Parola" required>
                 </div>
                 <div class="form-field">
                   <div class="g-recaptcha" data-sitekey="6Lcn7z4UAAAAAFAOf3qcWDt5BraTQIQNDnV5Al4o" data-callback="enableBtn"></div>
                 </div> 
-                <input id="button1" type="submit" class="btn btn-default button" value="Gönder" disabled>
+                <input id="button1" type="submit" class="btn btn-default button" value="Giriş Yap" disabled>
             </form>
         </div>
     </div>
 </div>
 <!-- End Hero -->
 
-<!-- Start 3 columns -->
-<div class="three-shade-col">
-    <div class="col-sm-4">
-        <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
-        <h3>İletişim</h3>
-        <ul>
-            <li><strong>Telefon:</strong> 932 50 540</li>
-            <li><strong>Acil:</strong> 931 53 234</li>
-            <li><strong>Email:</strong> contact@bilgehandental.com</li>
-        </ul>
-    </div>
-    <div class="col-sm-4">
-        <svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
-        <h3>Çalışma Saatleri</h3>
-        <table>
-            <tbody>
-                <tr>
-                    <td>Pazartesi - Cuma</td>
-                    <td>9:00 – 18:00</td>
-                </tr>
-                <tr>
-                    <td>Cumartesi</td>
-                    <td>10:00 – 17:00</td>
-                </tr>
-                <tr>
-                    <td>Pazar</td>
-                    <td>10:00 – 15:00</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="col-sm-4">
-        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
-        <h3>Adres</h3>
-            <p>
-                Atakum, <br> Samsun
-            </p>
-    </div>
-</div>
-<!-- End 3 columns -->
-
-<!-- Start About -->
-<div id="about" class="about">
-    <div class="container-fluid">
-        <h2 class="section-title">Hakkımızda</h2>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <h3>Welcome to DentistSmile</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!</p>
-
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <img src="img/about.jpg" alt="...">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End About -->
-
-<!-- Start Treatments -->
-<div id="treatments" class="treatments">
-    <div class="container-fluid">
-        <h2 class="section-title">Treatments</h2>
-
-        <div class="row">
-            
-                <div class="col-sm-6 col-md-4">
-                    <div class="icon-box">
-                        <svg class="icon icon-user-md"><use xlink:href="#icon-user-md"></use></svg>
-                        <h4>Invisible braces</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
-                    </div>
-                </div>
-            
-                <div class="col-sm-6 col-md-4">
-                    <div class="icon-box">
-                        <svg class="icon icon-diamond"><use xlink:href="#icon-diamond"></use></svg>
-                        <h4>Cosmetic Dentistry</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
-                    </div>
-                </div>
-            
-                <div class="col-sm-6 col-md-4">
-                    <div class="icon-box">
-                        <svg class="icon icon-flask"><use xlink:href="#icon-flask"></use></svg>
-                        <h4>Stain removal</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            
-                <div class="col-sm-6 col-md-4">
-                    <div class="icon-box">
-                        <svg class="icon icon-globe"><use xlink:href="#icon-globe"></use></svg>
-                        <h4>Dentures</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
-                    </div>
-                </div>
-            
-                <div class="col-sm-6 col-md-4">
-                    <div class="icon-box">
-                        <svg class="icon icon-ambulance"><use xlink:href="#icon-ambulance"></use></svg>
-                        <h4>Emergency Calls</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
-                    </div>
-                </div>
-            
-                <div class="col-sm-6 col-md-4">
-                    <div class="icon-box">
-                        <svg class="icon icon-bed"><use xlink:href="#icon-bed"></use></svg>
-                        <h4>Sedation</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
-                    </div>
-                </div>
-            
-        </div>
-    </div>
-</div>
-<!-- End Treatments -->
-
-<!-- Start Our team -->
-<div id="team" class="team"> 
-    <h2 class="section-title">Our Team</h2> 
-    <div id="team-carousel">
-    
-        <div class="expandable-box">
-            <div class="expandable-box-top">
-                <img src="/img/team1.jpg" alt="Britta Perry">
-                <h4>Britta Perry</h4>
-            </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
-                </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
-                </a>
-            </div>
-        </div>
-    
-        <div class="expandable-box">
-            <div class="expandable-box-top">
-                <img src="/img/team2.jpg" alt="Troy Barnes">
-                <h4>Troy Barnes</h4>
-            </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
-                </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
-                </a>
-            </div>
-        </div>
-    
-        <div class="expandable-box">
-            <div class="expandable-box-top">
-                <img src="/img/team3.jpg" alt="Annie">
-                <h4>Annie</h4>
-            </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
-                </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
-                </a>
-            </div>
-        </div>
-    
-        <div class="expandable-box">
-            <div class="expandable-box-top">
-                <img src="/img/team4.jpg" alt="Jeff Winger">
-                <h4>Jeff Winger</h4>
-            </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
-                </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
-                </a>
-            </div>
-        </div>
-    
-        <div class="expandable-box">
-            <div class="expandable-box-top">
-                <img src="/img/team1.jpg" alt="Britta Perry">
-                <h4>Britta Perry</h4>
-            </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
-                </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
-                </a>
-            </div>
-        </div>
-    
-        <div class="expandable-box">
-            <div class="expandable-box-top">
-                <img src="/img/team2.jpg" alt="Troy Barnes">
-                <h4>Troy Barnes</h4>
-            </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
-                </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
-                </a>
-            </div>
-        </div>
-    
-        <div class="expandable-box">
-            <div class="expandable-box-top">
-                <img src="/img/team3.jpg" alt="Annie">
-                <h4>Annie</h4>
-            </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:email@gmail.com" data-toggle="tooltip" data-placement="bottom" title="email@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
-                </a>
-                <a href="tel:9659 43 21" data-toggle="tooltip" data-placement="bottom" title="9659 43 21"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
-                </a>
-            </div>
-        </div>
-    
-    </div>
-</div>
-<!-- End Our team -->
-
-<!-- Start Testimonials -->
-<div id="testimonials" class="testimonials parallax" style="background-image: url('/img/parallax.jpg');">
-    <div class="overlay-container">
-        <div class="overlay"></div>
-        <div class="container-fluid">
-            <div id="testimonial-carousel">
-                
-                    <div class="testimonial-item">
-                        <svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg>
-                        <blockquote>
-                            <p>I teach law at Greendale, so believe me, I don't know much about law.</p>
-                            <footer>
-                                Jeff Winger
-                                <small>Law Professor - Greendale</small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                
-                    <div class="testimonial-item">
-                        <svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg>
-                        <blockquote>
-                            <p>Let's do what people do. Let's get a house we can't afford and a dog that makes us angry.</p>
-                            <footer>
-                                Jeff Winger
-                                <small>Law Professor - Greendale</small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                
-                    <div class="testimonial-item">
-                        <svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg>
-                        <blockquote>
-                            <p>There already was a rating system in place, it was called 'Cool People Get More,' and it was working fine.</p>
-                            <footer>
-                                Jeff Winger
-                                <small>Law Professor - Greendale</small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Testimonials -->
-
-<!-- Start Gallery -->
-<div id="gallery" class="gallery">
-        
-    <h2 class="section-title">Gallery</h2>
-
-    
-        <a href="/img/gallery/large/gl1.jpg" class="gallery-item expandable-box image-link">
-            <div class="expandable-box-top">
-                <img src="/img/gallery/thumb/gl1.jpg" alt="something meaningful">
-            </div>
-            <div class="expandable-box-bottom">
-                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
-            </div>
-        </a>
-    
-        <a href="/img/gallery/large/gl2.jpg" class="gallery-item expandable-box image-link">
-            <div class="expandable-box-top">
-                <img src="/img/gallery/thumb/gl2.jpg" alt="something meaningful">
-            </div>
-            <div class="expandable-box-bottom">
-                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
-            </div>
-        </a>
-    
-        <a href="/img/gallery/large/gl3.jpg" class="gallery-item expandable-box image-link">
-            <div class="expandable-box-top">
-                <img src="/img/gallery/thumb/gl3.jpg" alt="something meaningful">
-            </div>
-            <div class="expandable-box-bottom">
-                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
-            </div>
-        </a>
-    
-        <a href="/img/gallery/large/gl4.jpg" class="gallery-item expandable-box image-link">
-            <div class="expandable-box-top">
-                <img src="/img/gallery/thumb/gl4.jpg" alt="something meaningful">
-            </div>
-            <div class="expandable-box-bottom">
-                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
-            </div>
-        </a>
-    
-        <a href="/img/gallery/large/gl5.jpg" class="gallery-item expandable-box image-link">
-            <div class="expandable-box-top">
-                <img src="/img/gallery/thumb/gl5.jpg" alt="something meaningful">
-            </div>
-            <div class="expandable-box-bottom">
-                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
-            </div>
-        </a>
-    
-        <a href="/img/gallery/large/gl1.jpg" class="gallery-item expandable-box image-link">
-            <div class="expandable-box-top">
-                <img src="/img/gallery/thumb/gl1.jpg" alt="something meaningful">
-            </div>
-            <div class="expandable-box-bottom">
-                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
-            </div>
-        </a>
-    
-        <a href="/img/gallery/large/gl2.jpg" class="gallery-item expandable-box image-link">
-            <div class="expandable-box-top">
-                <img src="/img/gallery/thumb/gl2.jpg" alt="something meaningful">
-            </div>
-            <div class="expandable-box-bottom">
-                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
-            </div>
-        </a>
-    
-        <a href="/img/gallery/large/gl3.jpg" class="gallery-item expandable-box image-link">
-            <div class="expandable-box-top">
-                <img src="/img/gallery/thumb/gl3.jpg" alt="something meaningful">
-            </div>
-            <div class="expandable-box-bottom">
-                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
-            </div>
-        </a>
-    
-
-</div>
-<!-- End Gallery -->
-
-<!-- Start Map -->
-<div id="location" class="map" data-zoom="17" data-address="Atakum, Samsun" data-address-details="<img src='svg/min/logo.svg'>"></div>
-<!-- End Map -->
-
-           
-    <!-- Start Footer -->
 <footer class="main-footer">
     <div class="container-fluid">
         
@@ -529,7 +134,7 @@
        <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">KAYDINIZ OLUŞTURULMUŞTUR</h4>
+          <h4 class="modal-title" id="myModalLabel">Durum</h4>
         </div>
         <div class="modal-body" id="getCode" style="overflow-x: scroll;">
         </div>
@@ -538,39 +143,37 @@
   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://www.google.com/recaptcha/api.js?hl=tr" async defer></script>
-
-    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script-->
-    <!--script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script-->
-    <!--script src="https://www.jqueryscript.net/demo/Basic-Math-Captcha-Plugin/jquery.captcha.basic.min.js"></script--> 
-    <script src="/js/all.min.js"></script>
+<script src="/js/all.min.js"></script>
 <!-- End Footer -->
 <script type="text/javascript">
-      var frm = $('#sign_up');
+      var frm = $('#sign_in');
       frm.submit(function (ev) {
-      $.ajax({
+        // devise_tpken_auth sign_up cozumunun gerektirdigi
+        var formdata = {
+          email: $('#email').val() + '@bulut.dental', 
+          password: $('#password').val(), 
+        };
+        $.ajax({
           type: 'POST',
-          url: 'https://api_dev.bulut.dental/v1/firms',
-          data: frm.serialize(),
+          // bulundugu sayfaya post icin bu opsiyonun kaldırılması yeterli
+          url: 'http://light.vcap.me:3001/auth/sign_in', 
+          data: formdata,
           dataType: 'json',
           // islem basarılı ise
           success: function(data, status, xml){
-            var item = "Sayın " + data.data[0].name;
-            item += "<br> Kaydınız başarılı bir şekilde yapılmıştır. <br>Sizin için oluşturulan <a href='" + data.data[0].url;
-            item += "'>" +data.data[0].url + "</a> adresi oluşturulmuştur.<br>5 saniye sonra sayfaya yönlendirileceksiniz.";
+            var r_data = JSON.stringify(data);
+            var item = "Giriş başarılı.<br>";
+            item += "Kullanıcı Bilgileri: " + r_data;
             $("#getCode").append(item);
             $("#getCodeModal").modal('show');
             console.log("SUCCESS");
             console.log("data: ", data);
             console.log("status: ", status);
             console.log("xml: ", xml);
-            // 5 saniye sonra yonlendirme
-            window.setTimeout(function(){
-                window.location.href = data.data[0].url;
-            }, 5000);
           },
           // islem basarısız ise
           error: function(xml, status, error){
-            var item = "Kayıt başarısız.";
+            var item = "Giriş başarısız.";
             $("#getCode").append(item);
             $("#getCodeModal").modal('show');
             console.log("ERROR");
