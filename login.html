@@ -156,7 +156,7 @@
           email: $('#email').val() + '@bulut.dental', 
           password: $('#password').val(), 
         };
-        var url = "http://" +$('#subdomain').val() + ".vcap.me:3001/auth/sign_in"; // production icin .bulut.dental/auth/sign_in
+        var url = "http://" +$('#subdomain').val() + ".bulut.dental/auth/sign_in"; // dev: ".vcap.me:3001/auth/sign_in"; // production icin .bulut.dental/auth/sign_in
         $.ajax({
           type: 'POST',
           // bulundugu sayfaya post icin bu opsiyonun kaldırılması yeterli
