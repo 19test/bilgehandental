@@ -97,6 +97,9 @@
             <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Giriş Yap</h3>
             <form action="#" method="post" id="sign_in">
                 <div class="form-field">
+                    <input name="subdomain" id="subdomain" type="text" placeholder="Klinik Adı" required>
+                </div>
+                <div class="form-field">
                     <input name="email" id="email" type="text" placeholder="Telefon" required>
                 </div>
                 <div class="form-field">
@@ -148,15 +151,16 @@
 <script type="text/javascript">
       var frm = $('#sign_in');
       frm.submit(function (ev) {
-        // devise_tpken_auth sign_up cozumunun gerektirdigi
+        // devise_token_auth sign_up cozumunun gerektirdigi
         var formdata = {
           email: $('#email').val() + '@bulut.dental', 
           password: $('#password').val(), 
         };
+        var url = "http://" +$('#subdomain').val() + ".vcap.me:3001/auth/sign_in"; // production icin .bulut.dental/auth/sign_in
         $.ajax({
           type: 'POST',
           // bulundugu sayfaya post icin bu opsiyonun kaldırılması yeterli
-          url: 'http://light.vcap.me:3001/auth/sign_in', 
+          url: url,//'http://halideedip.vcap.me:3001/auth/sign_in',
           data: formdata,
           dataType: 'json',
           // islem basarılı ise
