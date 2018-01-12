@@ -1,0 +1,85 @@
+{% include doctype-head.html %}
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+    {% include svg-defs.svg %}
+    <!--[if lt IE 10]>
+        <p class="oldie">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!-- http://keenthemes.com/preview/asentus/ -->
+    <!--link href="http://keenthemes.com/preview/asentus/css/layout.min.css" rel="stylesheet" type="text/css"/>
+    <header class="header navbar-fixed-top scrollspy">
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <div class="menu-container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="toggle-icon"></span>
+                    </button>
+
+                    <div class="logo">
+                        <a class="logo-wrap" href="index.html">
+                            <img class="logo-img logo-img-main" src="{{ site.logo_white_url }}" alt="Asentus Logo" style="height: 75px;">
+                            <img class="logo-img logo-img-active" src="http://keenthemes.com/preview/asentus/img/logo-dark.png" alt="Asentus Logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse nav-collapse">
+                    <div class="menu-container">
+                        <ul class="navbar-nav navbar-nav-right">
+                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#pageHome">Ana Sayfa</a></li>
+                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#pageFeatures">Özellikler</a></li>
+                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#pageFAQ">SSS</a></li>
+                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#pageContact">İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header-->
+
+<!--link rel="stylesheet" href="http://bootstrapthemes.co/demo/html/logic-free-html5-multipurpose-business-template/assets/css/style.css">
+<div class="culmn">
+    <header id="main_menu" class="header navbar-fixed-top scrollspy">
+        <div class="main_menu_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="nave_menu">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#home">
+                                                    <img src="{{ site.logo_white_url }}" height="36px">
+                                                </a>
+                                </div>
+                                <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class=""><a href="#pageHome">Ana Sayfa</a></li>
+                                        <li><a href="#pageFeatures">Özellikler</a></li>
+                                        <li><a href="#pageFAQ">SSS</a></li>
+                                        <li><a href="#pageContact">İletişim</a></li>                                        
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div-->    
+
+    {{ content }}
+    {% if site.analytics %}
+        {% include analytics.html %}
+    {% endif %}
+
+</body>
+</html>
