@@ -9,24 +9,73 @@
     {% if site.analytics %}
         {% include analytics.html %}
     {% endif %}
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/js/all.min.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
+    <script src="{{ site.baseurl }}/js/all.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
 
-<script type="text/javascript" src="https://alvarotrigo.com/fullPage/jquery.fullPage.min.js"></script>
-<script type="text/javascript" src="https://alvarotrigo.com/fullPage/examples/examples.js"></script>
-<script src="https://www.google.com/recaptcha/api.js?hl=tr" async defer></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#fullpage').fullpage({
-            anchors: ['pageHome', 'pageFeatures', 'pageFAQ', 'pageContact'],
-            sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#ffcc00'],
-            navigation: true,
-            navigationPosition: 'left',
-            navigationTooltips: ['Ana Sayfa', 'Özellikler', 'SSS', 'İletişim']
+    <script type="text/javascript" src="https://alvarotrigo.com/fullPage/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="https://alvarotrigo.com/fullPage/examples/examples.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?hl=tr" async defer></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['pageHome', 'pageFeatures', 'pageFAQ', 'pageContact'],
+                sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#ffcc00'],
+                navigation: true,
+                navigationPosition: 'left',
+                navigationTooltips: ['Ana Sayfa', 'Özellikler', 'SSS', 'İletişim']
+            });
+
+            document.getElementById("#btnSubmit").disabled = true;
         });
-    });
-</script>
+
+        var frm = $('#sign_up');
+        frm.submit(function (ev) {
+            $.ajax({
+              type: 'POST',
+              url: 'https://api_dev.bulut.dental/v1/firms',
+              data: frm.serialize(),
+              dataType: 'json',
+              // islem basarılı ise
+              success: function(data, status, xml){
+                var item = "Sayın " + data.data[0].name;
+                item += "<br> Kaydınız başarılı bir şekilde yapılmıştır. <br>Sizin için oluşturulan <a href='" + data.data[0].url;
+                item += "'>" +data.data[0].url + "</a> adresi oluşturulmuştur.<br>5 saniye sonra sayfaya yönlendirileceksiniz.";
+                $("#getCode").append(item);
+                $("#getCodeModal").modal('show');
+                console.log("SUCCESS");
+                console.log("data: ", data);
+                console.log("status: ", status);
+                console.log("xml: ", xml);
+                // 5 saniye sonra yonlendirme
+                window.setTimeout(function(){
+                    window.location.href = data.data[0].url;
+                }, 5000);
+              },
+              // islem basarısız ise
+              error: function(xml, status, error){
+                var item = "Kayıt başarısız.";
+                $("#getCode").append(item);
+                $("#getCodeModal").modal('show');
+                console.log("ERROR");
+                console.log("xml: ", xml);
+                console.log("status: ", status);
+                console.log("error: ", error);
+              },
+              // son
+              complete: function(xml, status){
+              }
+             });
+             // tekrarı onle
+             ev.preventDefault();
+        });
+
+        function enableBtn(){
+            //alert("callback working");
+            $('#btnSubmit').prop("disabled", false);        
+        }
+    </script>
 </body>
 </html>
