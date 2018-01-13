@@ -1,8 +1,8 @@
 # Site settings
 title: BilgehanDental | Bilgehan Dental
 description: "Bilgehan Dental."
-baseurl: "/bilgehandental" # the subpath of your site, e.g. /blog
-url: "https://19pro.github.io/bilgehandental" # the name of your domain
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://19pro.github.io/" # the name of your domain
 logo_url: svg/min/logo.svg
 logo_white_url: svg/min/logo-white.svg
 
