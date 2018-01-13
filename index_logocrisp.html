@@ -268,7 +268,7 @@
     </div>
 </nav>
     
-    <div class="b-layer-big" style="height: 750px; color: #fff;">
+    <div class="b-layer-big" style="height: 650px; color: #fff;">
     <div class="layer-big-bg page-layer-big-bg">
         <div class="layer-content-big">
             <!-- Home slider -->
@@ -295,7 +295,7 @@
         </div>
     </div>
 </div>
-<style type="text/css">
+<style>
 header.header-transparent {
   border-bottom: 1px solid #6b9fc5;
   /* background: transparent; */
@@ -337,65 +337,6 @@ header.header-transparent {
 }
 
 </style>
-
-
-<!-- Start Hero -->
-<div class="hero" style="margin-top: -20px;height: 650px; background: url('/bilgehandental/img/export3_2.jpg') no-repeat; background-size: cover;">
-    <!--div class="hero-content">
-        <div class="container-fluid">
-            <div class="hero-content-inner">
-                <h1>BilgehanDental</h1>
-                <p>Bilgehan Dental.</p>
-            </div>
-        </div>
-    </div-->
-
-    <div class="container-fluid" style="">
-        <div class="col-sm-6 col-md-4 form" style="top: 350px; padding: 20px; background-color: rgba(245,245,245, 0);"">
-            <!--h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Kayıt Olun</h3-->
-
-            <!--form action="https://getsimpleform.com/messages?form_api_token=bf03ed7e99824273d92798b4ae4a63fa" method="post"-->
-            <form method="POST" action="#">
-                <div class="form-field">
-                    <input name="name" type="text" placeholder="Ad Soyad" required>
-                </div>
-                <div class="form-field">
-                    <input name="phone" type="tel" placeholder="Telefon" required>
-                </div>
-                <input type="submit" class="btn btn-success btn-lg" value="Gönder">
-            </form>
-        </div>
-
-        <script type="text/javascript">
-          var frm = $('#sign_up');
-          frm.submit(function (ev) {
-          $.ajax({
-              type: 'POST',
-              url: 'http://api_dev.bulut.dental/v1/firms', // 3001?, rails port 3001 de calisiyor 
-              data: frm.serialize(),
-              dataType: 'json',
-              // islem basarılı ise
-              success: function(data, status, xml){
-                  alert("İşlem başarılı bir şekilde gerçekleşmiştir.");
-              },
-              // islem basarısız ise
-              error: function(xml, status, error){
-                  alert("İşlem başarışız.");
-                  alert(xml.status);
-                  alert(error);
-              },
-              // son
-              complete: function(xml, status){
-              }
-             });
-             // tekrarı onle
-             ev.preventDefault();
-          });
-        </script>
-
-    </div>
-</div>
-<!-- End Hero -->
 
 <!-- Start 3 columns -->
 <div class="three-shade-col">
