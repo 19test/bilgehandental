@@ -1,16 +1,16 @@
 # Site settings
-title: BilgehanDental | Bilgehan Dental
-description: "Bilgehan Dental."
+title: BulutDental | Bulut Dental
+description: "Bulut Dental."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://19pro.github.io/" # the name of your domain
 logo_url: svg/min/logo.svg
-logo_white_url: svg/min/logo-white.svg
+logo_white_url: img/logo-white-text.png #svg/min/logo-white.svg
 
 # Hero
 hero: 
     hero_img: export3_2.jpg #hero.jpg
-    hero_title: BilgehanDental
-    hero_description: Bilgehan Dental.
+    hero_title: BulutDental
+    hero_description: Bulut Dental.
 
 # Contact form: 1fe975b79a805db5f31fc4f74526f328
 api_token: bf03ed7e99824273d92798b4ae4a63fa # Enter API token here
@@ -19,7 +19,7 @@ api_token: bf03ed7e99824273d92798b4ae4a63fa # Enter API token here
 contact:
     phone: 932 50 540
     emergency: 931 53 234
-    email: contact@bilgehandental.com
+    email: contact@bulutdental.com
     address: Atakum, <br> Samsun
 
 # Opening hours
