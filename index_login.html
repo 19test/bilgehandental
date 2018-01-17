@@ -97,17 +97,14 @@
             <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Giriş Yap</h3>
             <form action="#" method="post" id="sign_in">
                 <div class="form-field">
-                    <input name="subdomain" id="subdomain" type="text" placeholder="Klinik Adı" required>
-                </div>
-                <div class="form-field">
-                    <input name="email" id="email" type="text" placeholder="Telefon" required>
+                    <input name="phone" id="phone" type="text" placeholder="Telefon" required>
                 </div>
                 <div class="form-field">
                     <input name="password" id="password" type="password" placeholder="Parola" required>
                 </div>
                 <div class="form-field">
                   <div class="g-recaptcha" data-sitekey="6Lcn7z4UAAAAAFAOf3qcWDt5BraTQIQNDnV5Al4o" data-callback="enableBtn"></div>
-                </div> 
+                </div>
                 <input id="button1" type="submit" class="btn btn-default button" value="Giriş Yap" disabled>
             </form>
         </div>
@@ -151,18 +148,11 @@
 <script type="text/javascript">
       var frm = $('#sign_in');
       frm.submit(function (ev) {
-        // devise_token_auth sign_up cozumunun gerektirdigi
-        var formdata = {
-          email: $('#email').val() + '@bulut.dental', 
-          password: $('#password').val(), 
-        };
-        // var url = "http://" +$('#subdomain').val() + ".vcap.me:3001/auth/sign_in"; // dev
-	var url = "https://" +$('#subdomain').val() + ".bulut.dental/auth/sign_in";  // prod
         $.ajax({
           type: 'POST',
           // bulundugu sayfaya post icin bu opsiyonun kaldırılması yeterli
-          url: url,//'https://halideedip.vcap.me:3001/auth/sign_in',
-          data: formdata,
+          url: 'https://api_dev.bulut.dental/v1/login',
+          data: frm.serialize(),
           dataType: 'json',
           // islem basarılı ise
           success: function(data, status, xml){
