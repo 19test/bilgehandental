@@ -438,9 +438,9 @@
               dataType: 'json',
               // islem basarılı ise
               success: function(data, status, xml){
-                var item = "Sayın " + data.data[0].name;
-                item += "<br> Kaydınız başarılı bir şekilde yapılmıştır. <br>Sizin için oluşturulan <a href='" + data.data[0].url;
-                item += "'>" +data.data[0].url + "</a> adresi oluşturulmuştur.<br>5 saniye sonra sayfaya yönlendirileceksiniz.";
+                var item = "Sayın " + data["data"].name;
+                item += "<br> Kaydınız başarılı bir şekilde yapılmıştır. <br>Sizin için oluşturulan <a href='" + data["data"].url;
+                item += "'>" + data["data"].url + "</a> adresi oluşturulmuştur.<br>5 saniye sonra sayfaya yönlendirileceksiniz.";
                 $("#getCode").append(item);
                 $("#getCodeModal").modal('show');
                 console.log("SUCCESS");
