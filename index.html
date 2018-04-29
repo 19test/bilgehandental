@@ -197,7 +197,17 @@
       display:inline-block;
       position:relative;
   }
-
+  #hebelehubele:hover{
+    background: #009ABB;
+  }
+  #hubelehebele{
+    transition: transform .4s;
+    transform-origin: 0 0;
+  }
+  #hubelehebele:hover{
+    transform-origin: 0 0;
+    transform: scale(1.1);
+  }
   .banner-text li {
       font-family: Poppins-Regular;
       font-size: 20px;
@@ -260,10 +270,10 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav pull-right">
-            <li style="padding-top: 10px;"><a href="#pageHome" style="color: #fff;">ANA SAYFA</a></li>
-            <li style="padding-top: 10px;"><a href="#pageFeatures" style="color: #fff;">ÖZELLİKLER</a></li>
-            <li style="padding-top: 10px;"><a href="#pageFAQ" style="color: #fff;">SSS</a></li>
-            <li style="padding-top: 10px;"><a href="#pageContact" style="color: #fff;">İLETİŞİM</a></li>
+            <li style="padding-top: 10px;"><a id="hebelehubele" href="#pageHome" style="color: #fff;">ANA SAYFA</a></li>
+            <li style="padding-top: 10px;"><a id="hebelehubele" href="#pageFeatures" style="color: #fff;">ÖZELLİKLER</a></li>
+            <li style="padding-top: 10px;"><a id="hebelehubele" href="#pageFAQ" style="color: #fff;">SSS</a></li>
+            <li style="padding-top: 10px;"><a id="hebelehubele" href="#pageContact" style="color: #fff;">İLETİŞİM</a></li>
           </ul>
         </div>
     </div>
@@ -273,22 +283,22 @@
     <div class="section" id="section0">        
         <div class="col-md-offset-1 col-md-5 col-sm-7 col-xs-12">
             <div class="banner-text">
-                <h1 style="font-size: 54px;">Bulut <strong>Diş Kliniği</strong> <br>Otomasyonu</h1>
+                <h1 style="font-size: 54px; margin: 50px 0 0 0;">Bulut <strong>Diş Kliniği</strong> <br>Otomasyonu</h1>
                 <br><p style="font-size: 30px;line-height:1.2; color: #f9f9f9;">Her zaman, her yerde, her cihazla <br>
                 güvenli erişim sağlayın.</p>
                 <br>
                 <ul>
-                    <li><i class="fa fa-user"></i> Hasta Takip Modülü</li>
-                    <li><i class="fa fa-calendar"></i> Randevu Modülü</li>
-                    <li><i class="fa fa-credit-card"></i> Muhasebe Modülü</li>
-                    <li><i class="fa fa-shopping-cart"></i> Stok Modülü</li>
-                    <li><i class="fa fa-pie-chart"></i> Raporlama Modülü</li>
-                    <li><i class="fa fa-whatsapp"></i> CRM Modülü</li>
-                    <li><i class="fa fa-flask"></i> Laboratuvar İstek Modülü</li>
-                    <li><i class="fa fa-cog"></i> Firma Klinik Modülü</li>   
+                    <li><i id="hubelehebele" class="fa fa-user"></i> Hasta Takip Modülü</li>
+                    <li><i id="hubelehebele" class="fa fa-calendar"></i> Randevu Modülü</li>
+                    <li><i id="hubelehebele" class="fa fa-credit-card"></i> Muhasebe Modülü</li>
+                    <li><i id="hubelehebele" class="fa fa-shopping-cart"></i> Stok Modülü</li>
+                    <li><i id="hubelehebele" class="fa fa-pie-chart"></i> Raporlama Modülü</li>
+                    <li><i id="hubelehebele" class="fa fa-whatsapp"></i> CRM Modülü</li>
+                    <li><i id="hubelehebele" class="fa fa-flask"></i> Laboratuvar İstek Modülü</li>
+                    <li><i id="hubelehebele" class="fa fa-cog"></i> Firma Klinik Modülü</li>   
                     <!--li><i class="fa fa-shield"></i> Güvenlik</li>   
                     <li><i class="fa fa-picture-o"></i> Röntgen ve Dijital Görüntüleme</li-->
-                    <li><i class="fa fa-plug"></i> Entegrasyonlar</li>   
+                    <li><i id="hubelehebele" class="fa fa-plug"></i> Entegrasyonlar</li>   
                 </ul>
                 <!--div class="btn-holder">
                     <a class="btn btn-lg btn-success btn-outline hvr-float-shadow" href="#" style="width: 180px; border-radius: 0px;">
@@ -301,7 +311,7 @@
             </div>
         </div>
 
-        <div class="col-sm-offset-1 col-md-3 col-sm-4 col-xs-12">
+        <div class="col-sm-offset-1 col-md-3 col-sm-4 col-xs-12" style="margin: 50px 0 0 50px;">
             <!-- https://colorlib.com/etc/lf/Login_v4/index.html -->
             <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
                 <!--form action="https://getsimpleform.com/messages?form_api_token=bf03ed7e99824273d92798b4ae4a63fa" method="post" id="contact"-->
