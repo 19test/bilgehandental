@@ -1,5 +1,5 @@
 # How to
-test
+test başka bir test
 ```sh
 $ gem install jekyll
 $ jekyll build --watch
